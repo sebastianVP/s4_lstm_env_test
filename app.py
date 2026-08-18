@@ -11,7 +11,21 @@ from tensorflow.keras.models import load_model
 st.set_page_config(page_title="Predicción S4 Ionosférico", layout="wide")
 
 # Características exactas de entrada a la red LSTM
-LSTM_FEATURES = ["S4", "TEC", "daily_sin", "daily_cos", "day_of_year_sin", "day_of_year_cos"]
+#LSTM_FEATURES = ["S4", "TEC", "daily_sin", "daily_cos", "day_of_year_sin", "day_of_year_cos"]
+# Las 11 características exactas requeridas por el modelo LSTM
+LSTM_FEATURES = [
+    "S4", 
+    "TEC", 
+    "daily_sin", 
+    "daily_cos", 
+    "day_of_year_sin", 
+    "day_of_year_cos",
+    "AE_Index",
+    "Dst_Index",
+    "Kp_Index",
+    "ROTI",
+    "f10.7_Index"
+]
 LOOKBACK = 70
 HORIZON = 10
 THRESHOLD = 0.6
