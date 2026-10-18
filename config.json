@@ -1,0 +1,27 @@
+{
+  "LOOKBACK": 60,
+  "HORIZON": 20,
+  "THRESHOLD": 0.6,
+  "UMBRAL_ALERTA": 0.55,
+  "FEATURES_COLS": [
+    "S4",
+    "daily_sin",
+    "daily_cos",
+    "day_of_year_sin",
+    "day_of_year_cos"
+  ],
+  "TARGET_COL": "S4",
+  "SAMPLING_MINUTES": 1,
+  "ARQUITECTURA": "apilado",
+  "UNITS1": 64,
+  "UNITS2": 64,
+  "ALPHA": 1.5,
+  "BETA": 10.0,
+  "SEMILLA": 7,
+  "RMSE_EVENTO_TEST": 0.2225,
+  "HSS_TEST": 0.5451,
+  "POD_TEST": 0.4372,
+  "PRECISION_TEST": 0.7406,
+  "POD_INICIO_TEST": 0.3254,
+  "PERIODO_TEST": "2026-03-02 a 2026-07-21"
+}
